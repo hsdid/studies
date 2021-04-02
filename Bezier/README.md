@@ -1,3 +1,3 @@
 python pygame 
 
-!()[bezier.png]
+![](bezier.png)
