@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OpenInsta</title>
+    <link rel="stylesheet" href="main.css" type="text/css">
+</head>
+<body>
+
+
+<div class="container">
+    <div class="left-side" >
+        <div class="left-header">
+            Options
+        </div>
+
+        <label for="red">Red</label>
+        <div class="left-content">
+            <input type="range" min="-255" max="255" value="0" id="red">
+        </div>
+        
+        <label for="green">Green</label>
+        <div class="left-content">
+            <input type="range" min="-255" max="255" value="0" id="green">
+        </div>
+
+        <label for="blue">Blue</label>
+        <div class="left-content">  
+            <input type="range" min="-255" max="255" value="0" id="blue">
+        </div>
+
+        <label for="brightness">Brightness</label>
+        <div class="left-content">
+            <input type="range" min="-255" max="255" value="0" id="brightness">
+        </div>
+
+        <label for="contrast">Constrast</label>
+        <div class="left-content">
+            <input type="range" min="-255" max="255" value="0" id="contrast">
+        </div>
+
+        <label for="grayscale">Grayscale</label>
+        <div class="left-content">
+            <input type="checkbox" id="grayscale">
+        </div>
+
+        <label for="negative">Negative</label>
+        <div class="left-content">
+            <input type="checkbox" id="negative">
+        </div>
+
+        
+        <input type="file" accept="image/*" id="fileinput" style="margin-bottom: 10px;"/>
+
+
+    </div>
+        
+    <div class="right-side" >
+        <div id="img" class="image-content">
+            <canvas class="responsive" id="canvas" width="0" height="0"></canvas>
+        </div>
+    </div>
+    
+</div>
+<script src="main.js"></script>
+</body>
+</html>
