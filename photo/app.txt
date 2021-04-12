@@ -89,8 +89,8 @@ function runPipeline() {
         setGrayscale(j, i)
       }
 
-      if (negativeFilter) {
-        setNegative(j, i)
+      if (negative) {
+
       }
 
       addBrightness(j, i, brightnessFilter)
@@ -153,21 +153,7 @@ function setGrayscale(x, y) {
 }
 
 function setNegative(x, y) {
-  const redIndex = getIndex(x, y) + R_OFFSET
-  const greenIndex = getIndex(x, y) + G_OFFSET
-  const blueIndex = getIndex(x, y) + B_OFFSET
-
-  const redValue = currentPixels[redIndex]
-  const greenValue = currentPixels[greenIndex]
-  const blueValue = currentPixels[blueIndex]
-
-  const nextRed = 255 - redValue
-  const nextGreen = 255 - greenValue
-  const nextBlue = 255 - blueValue
-
-  currentPixels[redIndex] = clamp(nextRed)
-  currentPixels[greenIndex] = clamp(nextGreen)
-  currentPixels[blueIndex] = clamp(nextBlue)
+    
 }
 
 function addContrast(x, y, value) {
