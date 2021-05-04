@@ -2,6 +2,6 @@
 
 ![](img.png)
 ![](img1.png)
-![](contrast)
-![](contrast1)
-![](contrast2)
+![](contrast.png)
+![](contrast1.pmg)
+![](contrast2.png)
